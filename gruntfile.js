@@ -8,7 +8,7 @@ module.exports = function (grunt) {
         autoprefixer: {
             options: {
                 // Task-specific options go here.
-                browsers: ['last 2 versions', 'firefox > 3']
+                browsers: ['last 2 versions', 'chromium > 3']
             },
             your_target: {
                 // Target-specific file lists and/or options go here.
@@ -82,7 +82,7 @@ module.exports = function (grunt) {
                 }
             }
         }
-    })
+    });
 
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
@@ -93,3 +93,4 @@ module.exports = function (grunt) {
 
 
 };
+
