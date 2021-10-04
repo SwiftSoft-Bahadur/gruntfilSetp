@@ -63,13 +63,26 @@ module.exports = function (grunt) {
                     }
                 }
             },
+            qunit: {
+                all: {
+                    options: {
+                        urls: [
+                            'http://localhost:8000'
+                        ]
+                    }
+                }
+            }
+        },
+        connect: {
+            server: {
+                options: {
+                    port: 8000,
+                    base: '/tests/',
+                    keepalive: true,
+                }
+            }
         }
-    }
-
-
-
-
-    )
+    })
 
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
